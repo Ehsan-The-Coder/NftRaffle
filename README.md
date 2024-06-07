@@ -1,66 +1,11 @@
-## Foundry
+# Nft Raffle is Project where Creator/Artist list there art. Any user who wants to participate in the raffle pay raffle price wia ether or using the tokens(fetching price from chainlink). Successful winner withdraw using chainlink VRF to maintain its fairness.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# The creator can set the Threshold (minimum number of participants)
 
-Foundry consists of:
+# When reach the Threshold any Participants can the request to withdraw
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+# Creator can't be a participant
 
-## Documentation
+# If the Threshold not completed and time is over raffle automatically withdraw and then only 10% of money given to creator rest is return to the participants. Returning 10% only is his punshment for not becoming a good creator.
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# if Threshold is completed and time is passed then the winner(s) get its NFT(s) and creator can get his money.
